@@ -141,22 +141,39 @@
         </div>
     </center>
 
-    <br><br>
-    <!--Componente forms -->
-    <h2><b>Contactanos</b></h2>
-    <div>
-        <form>
-            <div class="form-group">
-                <label for="exampleInputEmail1">Correo Electrónico</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese email" style="width: 300px;">
-            </div>
-            <div class="form-group">
-                <label for="exampleInputPassword1">Mensaje</label>
-                <input type="text" class="form-control" id="exampleInputPassword1" style="width: 300px;">
-            </div><br><br>
 
-            <button type="submit" class="btn btn-primary">Enviar</button>
-        </form>
+    <div class="row">
+        <div class="col-sm-4">
+            <h2><b>Navegacion</b></h2><br>
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#v-pills-home" role="tab" aria-controls="v-pills-home" aria-selected="false">Inicio</a>
+                <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#v-pills-profile" role="tab" aria-controls="v-pills-profile" aria-selected="false">Biciclietas</a>
+                <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Repuestos</a>
+            </div>
+
+        </div>
+        <!--Componente forms -->
+        <div class="col-sm-4">
+            <h2><b>Contactanos</b></h2>
+            <div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Correo Electrónico</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Ingrese email" style="width: 300px;">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Mensaje</label>
+                        <input type="text" class="form-control" id="exampleInputPassword1" style="width: 300px;">
+                    </div><br>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="col-sm-4">
+            <img src="{{url_for('static', filename='Img/logo.png')}}" width="200px" height="150px">
+        </div>
+
     </div>
 </body>
 
