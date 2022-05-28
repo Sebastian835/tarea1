@@ -37,12 +37,9 @@
                                 <li><a class="dropdown-item" href="#">Scott</a></li>
                             </ul>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled">Contacto</a>
-                        </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Consulta" aria-label="Search">
+                        <input class="form-control me-2" type="search" placeholder="Buscas algo?" aria-label="Search">
                         <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                 </div>
@@ -92,6 +89,41 @@
                         encontrarás desde bicicletas de montaña diseñadas para abordar los terrenos más exigentes, hasta bicicletas para principiantes que tienen una excelente relación calidad-precio.
             </blockquote>
             </div>
+            <!--Componente cards--->
+            <div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Specialized Bicicleta Carretera<br> Allez Sprint Comp Disc 2022
+                                </h5>
+
+                                <img src="{{url_for('static', filename='Img/6.jpg')}}" width="210px" height="220px">
+                                <p class="card-text">US$ 3242.99</p>
+                                <a href="#" class="btn btn-primary">Compra</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-sm-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Bombtrack Bicicleta MTB Beyond Adv 29+''
+                                </h5>
+
+                                <img src="{{url_for('static', filename='Img/7.jpg')}}" width="210px" height="220px">
+
+                                <p class="card-text">US$ 2490.99
+
+                                </p>
+
+                                <a href="#" class="btn btn-primary">Compra</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
 </body>
 
 </html>
